@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Notification } from '@mozaic-ds/react';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Notification
+        isClosable
+        message="Ceci est un élement en React créé à partir de Mozaic"
+        onClose={() => { }}
+        size="m"
+        theme="info"
+        title="Information notification"
+      />
     </div>
   );
 }
